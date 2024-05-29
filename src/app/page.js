@@ -5,18 +5,6 @@ import Image from 'next/image';
 import Lenis from '@studio-freight/lenis'
 import { useTransform, useScroll, motion } from 'framer-motion';
 
-const images = [
-  "image1.png",
-  "image2.png",
-  "image3.png",
-  "image4.png",
-  "image5.png",
-  "image6.png",
-  "image7.png",
-  "image8.png",
-  "image10.png",
-
-]
 
 export default function Home() {
   
@@ -77,10 +65,10 @@ export default function Home() {
         </section>
     
       <div ref={gallery} className={styles.gallery}>
-        <Column images={[images[0], images[1], images[2]]} y={y}/>
-        <Column images={[images[2], images[2], images[3]]} y={y2}/>
-        <Column images={[images[5], images[4], images[5]]} y={y3}/>
-        <Column images={[images[9], images[6], images[8]]} y={y4}/>
+        <Column images={["image1.png", "image2.png", "image3.png",]} y={y}/>
+        <Column images={["image2.png", "image3.png", "image4.png",]} y={y2}/>
+        <Column images={["image5.png", "image4.png", "image7.png"]} y={y3}/>
+        <Column images={["image8.png", "image9.png", "image10.png"]} y={y4}/>
       </div>
 
       <section id='Section 6'>
