@@ -6,17 +6,16 @@ import Lenis from '@studio-freight/lenis'
 import { useTransform, useScroll, motion } from 'framer-motion';
 
 const images = [
-  "image1.jpeg",
-  "image2.jpeg",
-  "image3.jpeg",
-  "image4.jpeg",
-  "image5.jpeg",
-  "image6.jpeg",
-  "image7.jpeg",
-  "image8.jpeg",
-  "image10.jpeg",
-  "image10.webp",
-  "imageMain.webp",
+  "image1.png",
+  "image2.png",
+  "image3.png",
+  "image4.png",
+  "image5.png",
+  "image6.png",
+  "image7.png",
+  "image8.png",
+  "image10.png",
+
 ]
 
 export default function Home() {
@@ -79,9 +78,9 @@ export default function Home() {
     
       <div ref={gallery} className={styles.gallery}>
         <Column images={[images[0], images[1], images[2]]} y={y}/>
-        <Column images={[images[2], images[3], images[6]]} y={y2}/>
-        <Column images={[images[5], images[6], images[7]]} y={y3}/>
-        <Column images={[images[9], images[10], images[9]]} y={y4}/>
+        <Column images={[images[2], images[2], images[3]]} y={y2}/>
+        <Column images={[images[5], images[4], images[5]]} y={y3}/>
+        <Column images={[images[9], images[6], images[8]]} y={y4}/>
       </div>
 
       <section id='Section 6'>
